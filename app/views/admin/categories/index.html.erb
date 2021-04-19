@@ -1,3 +1,7 @@
+<% if @category.errors.any? %>
+  <%= @category.errors.full_messages.to_sentence %>
+<% end %>
+
 <div class="container">
 
   <h1>餐廳分類總表</h1>
