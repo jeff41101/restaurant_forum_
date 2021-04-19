@@ -58,3 +58,5 @@ gem 'devise'
 gem 'carrierwave'
 #fake data
 gem 'ffaker'
+#pages
+gem 'kaminari'
