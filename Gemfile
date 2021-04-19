@@ -60,3 +60,8 @@ gem 'carrierwave'
 gem 'ffaker'
 #pages
 gem 'kaminari'
+
+#bootstrap
+gem 'bootstrap-sass', '~> 3.3.7'
+#jQuery 
+gem 'jquery-rails'
