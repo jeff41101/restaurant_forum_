@@ -10,7 +10,6 @@ class Admin::RestaurantsController < Admin::BaseController
   end
 
   def show
-
   end
 
   def destroy
