@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20210420140748) do
+ActiveRecord::Schema.define(version: 20210420152145) do
 
   create_table "add_attributes_to_users", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -55,6 +55,7 @@ ActiveRecord::Schema.define(version: 20210420140748) do
     t.datetime "updated_at", null: false
     t.string "image"
     t.integer "category_id"
+    t.integer "favorites_count", default: 0
   end
 
   create_table "users", force: :cascade do |t|
