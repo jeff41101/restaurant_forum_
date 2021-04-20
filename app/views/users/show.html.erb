@@ -39,7 +39,7 @@
             <div class="my-restaurant">
               <div>
                 <% if restaurant.image.url %>
-                  <%= image_tag restaurant.image.url, class: "img-responsive img-rounded" %>
+                  <%= image_tag restaurant.image.url, height: '100px', class: "img-responsive img-rounded" %>
                 <% else %>
                   <img src="http://via.placeholder.com/50x50" class="img-responsive img-rounded">
                 <% end %>
