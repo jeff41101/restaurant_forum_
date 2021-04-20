@@ -1,5 +1,6 @@
 class Category < ApplicationRecord
   validates_presence_of :name
 
-  has_many :restaurants, dependent: :destroy
+  # if there's restaurant under the catogory, you cannot delete the catogory
+   has_many :restaurants, dependent: :restrict_with_error
 end
