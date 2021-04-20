@@ -32,8 +32,11 @@
        <div class="col-md-3 col-sm-4 col-xs-6 text-center user-item">
 
          <%= link_to user_path(user) do %>
-           <!-- 可先利用 Placeholder 如 <img src="http://via.placeholder.com/128x128"> 產生圖片 -->
-           <%= image_tag(user.avatar, class: "img-rounded") %>
+         <% if user.avatar.url %>
+           <%= image_tag user.avatar.url, height: '300px', class: "img-responsive img-rounded" %>
+         <% else %>
+           <img src="http://via.placeholder.com/300x300" class="img-responsive img-rounded">
+         <% end %>
            <h4><%= user.name %></h4>
          <% end %>
          <%= render partial: "shared/follow", locals: {user: user} %>
