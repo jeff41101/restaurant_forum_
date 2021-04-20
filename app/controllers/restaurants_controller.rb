@@ -45,6 +45,11 @@ class RestaurantsController < ApplicationController
      redirect_back(fallback_location: root_path)
    end
 
+   # GET /restaurants/ranking
+    def ranking
+      @restaurants = Restaurant.order(favorites_count: :desc).limit(10)
+    end
+
    private
 
      def set_restaurant
